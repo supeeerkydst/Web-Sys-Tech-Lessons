@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  background: #f6f7fb;
+  color: #1a1a1a;
+}
+
+a {
+  color: inherit;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  background: white;
+  border-bottom: 1px solid #e5e7ef;
+  position: sticky;
+  top: 0;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  margin-left: 12px;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.site-nav a:hover {
+  background: #eef2ff;
+}
+
+/* === GRID LAYOUT (Mobile First) === */
+.layout {
+  width: min(1100px, 92%);
+  margin: 18px auto 28px;
+
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border: 1px solid #e5e7ef;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+/* Sidebar styling */
+.sidebar .note {
+  background: #f2f7ff;
+  border: 1px dashed #c6d7ff;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* Nested grid inside article */
+.mini-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 100%;
+
+  row-gap: 12px;
+  column-gap: 12px;
+}
+
+.mini-card {
+  border: 1px solid #e5e7ef;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fafbff;
+}
+
+/* Responsive Image + Video */
+.responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Full-width sections */
+.full {
+  
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #d9dbea;
+  margin-top: 6px;
+  font: inherit;
+}
+
+.contact-form button {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #c8cbe0;
+  background: #eef2ff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #e2e8ff;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 18px;
+  color: #555;
+}
+
+/* === MEDIA QUERY BREAKPOINT === */
+@media screen and (min-width: 600px) {
+
+  .layout {
+    grid-template-columns: 70% 30%;
+  }
+
+  .full {
+    grid-column: 1 / -1;
+  }
+
+ .mini-grid {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+}

@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+
+      <!-- Required for responsive layout -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>CSS Grid</title>
+      <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+      <header class="header">
+          <h1>Pokémon Grid Layout</h1>
+          <p>CSS Grid in action – Pokédex Edition</p>
+      </header>
+
+      <!-- MAIN GRID CONTAINER -->
+      <main class="layout">
+
+          <!-- Main Content -->
+          <article class="main">
+              <h2>Starter Pokémon</h2>
+
+              <!-- Nested Grid -->
+              <div class="pokemon-grid">
+
+                  <div class="card">
+                      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu">
+                      <h3>Pikachu</h3>
+                      <p>Type: Electric ⚡</p>
+                  </div>
+
+                  <div class="card">
+                      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander">
+                      <h3>Charmander</h3>
+                      <p>Type: Fire 🔥</p>
+                  </div>
+
+                  <div class="card">
+                      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
+                      <h3>Bulbasaur</h3>
+                      <p>Type: Grass 🌿</p>
+                  </div>
+
+                  <div class="card">
+                      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle">
+                      <h3>Squirtle</h3>
+                      <p>Type: Water 💧</p>
+                  </div>
+
+              </div>
+          </article>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+              <h2>Trainer Info</h2>
+              <p>Name: Ash Ketchum</p>
+              <p>Region: Kanto</p>
+              <p>Badges: 8</p>
+
+              <h3>Upcoming Battle</h3>
+              <p>Gym Leader: Brock</p>
+              <p>Type: Rock 🪨</p>
+          </aside>
+
+          <!-- Full Width Section -->
+          <section class="full">
+              <h2>Legendary Spotlight</h2>
+              <img class="responsive" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" alt="Mewtwo">
+              <p>
+                  Mewtwo spans across the full grid width using
+                  <code>grid-column: 1 / -1</code>.
+              </p>
+          </section>
+
+      </main>
+
+      <footer class="footer">
+          <small>IT2301 – CSS Grid Pokémon Demo</small>
+      </footer>
+
+  </body>
+
+</html>

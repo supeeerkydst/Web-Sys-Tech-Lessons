@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive requirement -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Media Query</title>
+    <link rel="stylesheet" href="breakpoint.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="logo">
+        <span class="dot"></span>
+        Pokédex UI
+      </div>
+
+      <!-- Visible on small screens, hidden on larger screens -->
+      <button class="menu-btn" type="button" aria-label="Open menu">☰</button>
+
+      <!-- Hidden on small screens, visible on larger screens -->
+      <nav class="nav">
+        <a href="#roster">Roster</a>
+        <a href="#moves">Moves</a>
+        <a href="#badges">Badges</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Pokémon Media Query Breakpoints</h1>
+      <p>
+        Resize the window to watch the Pokédex change modes. This is media queries doing the heavy lifting.
+      </p>
+
+      <div class="mode">
+        Pokédex Mode:
+        <span class="mode-pill mode-xs">XS (Mobile)</span>
+        <span class="mode-pill mode-sm">SM (Wide Mobile)</span>
+        <span class="mode-pill mode-md">MD (Tablet)</span>
+        <span class="mode-pill mode-lg">LG (Laptop)</span>
+        <span class="mode-pill mode-xl">XL (Desktop)</span>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- Roster cards change columns across breakpoints -->
+      <section id="roster" class="panel">
+        <h2>Trainer Roster</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Pikachu</h3>
+            <p class="type">Electric</p>
+            <p class="desc">Fast, friendly, and basically your default MVP.</p>
+          </article>
+
+          <article class="card">
+            <h3>Charmander</h3>
+            <p class="type">Fire</p>
+            <p class="desc">Starter energy. Hot-headed, but reliable.</p>
+          </article>
+
+          <article class="card">
+            <h3>Bulbasaur</h3>
+            <p class="type">Grass / Poison</p>
+            <p class="desc">Balanced tank. Calm. Lowkey carries.</p>
+          </article>
+
+          <article class="card">
+            <h3>Squirtle</h3>
+            <p class="type">Water</p>
+            <p class="desc">Solid defense and vibes. Always hydrated.</p>
+          </article>
+
+          <article class="card">
+            <h3>Eevee</h3>
+            <p class="type">Normal</p>
+            <p class="desc">A “choose your evolution” kind of mood.</p>
+          </article>
+
+          <article class="card">
+            <h3>Gengar</h3>
+            <p class="type">Ghost / Poison</p>
+            <p class="desc">Spooky, sneaky, and somehow always laughing.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Layout becomes 2 columns at tablet+ (breakpoint) -->
+      <section class="split">
+        <section id="moves" class="panel">
+          <h2>Moveset</h2>
+          <ul class="list">
+            <li><strong>Thunderbolt</strong> — Pikachu’s “delete button.”</li>
+            <li><strong>Flamethrower</strong> — clean, classic fire damage.</li>
+            <li><strong>Vine Whip</strong> — quick control and poke.</li>
+            <li><strong>Water Gun</strong> — simple, effective, splashy.</li>
+            <li><strong>Shadow Ball</strong> — for the dramatic finish.</li>
+          </ul>
+        </section>
+
+        <section id="badges" class="panel">
+          <h2>Gym Badges</h2>
+          <div class="badges">
+            <span class="badge">Boulder</span>
+            <span class="badge">Cascade</span>
+            <span class="badge">Thunder</span>
+            <span class="badge">Rainbow</span>
+            <span class="badge">Soul</span>
+            <span class="badge">Marsh</span>
+            <span class="badge">Volcano</span>
+            <span class="badge">Earth</span>
+          </div>
+        </section>
+      </section>
+
+      <footer class="footer">
+        <small>Tip: Open DevTools → toggle device toolbar → test the breakpoints.</small>
+      </footer>
+    </main>
+  </body>
+</html>

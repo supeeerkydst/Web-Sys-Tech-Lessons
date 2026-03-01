@@ -1,0 +1,241 @@
+/* ========== Base (Mobile-first / XS) ========== */
+* { box-sizing: border-box; }
+
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --line: #e5e7ef;
+  --text: #1a1a1a;
+  --muted: #5a5a5a;
+  --pill: #eef2ff;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* Topbar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: white;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.3px;
+}
+
+.logo .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #ff4d4d;
+  display: inline-block;
+  box-shadow: 0 0 0 3px #ffd6d6;
+}
+
+/* Mobile nav behavior: menu button visible, nav hidden */
+.menu-btn {
+  border: 1px solid var(--line);
+  background: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.nav { display: none; }
+.nav a {
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.nav a:hover { background: #f2f4ff; }
+
+/* Hero */
+.hero {
+  width: min(1100px, 92%);
+  margin: 18px auto 10px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.hero h1 {
+  margin: 0 0 6px 0;
+  font-size: 1.25rem;
+}
+
+.hero p {
+  margin: 0 0 12px 0;
+  color: var(--muted);
+}
+
+.mode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.mode-pill {
+  display: none; /* only one shows depending on breakpoint */
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--pill);
+  border: 1px solid #d9ddff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* show XS label by default */
+.mode-xs { display: inline-flex; }
+
+/* Container + Panels */
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto 28px;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 14px;
+}
+
+.panel h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Roster grid: 1 column on XS */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px;
+  background: #fafbff;
+}
+
+.card h3 { margin: 0 0 6px 0; }
+.type { margin: 0; font-weight: 700; }
+.desc { margin: 8px 0 0 0; color: var(--muted); }
+
+/* Split section: stacked on XS */
+.split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: white;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 18px 0 6px;
+}
+
+/* ========== SM breakpoint (≥600px) ========== */
+@media screen and (min-width: 600px) {
+  /* show SM label instead of XS */
+  .mode-xs { display: none; }
+  .mode-sm { display: inline-flex; }
+
+  /* roster becomes 2 columns */
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* slightly larger hero title */
+  .hero h1 {
+    font-size: 1.45rem;
+  }
+}
+
+/* ========== MD breakpoint (≥768px) ========== */
+@media screen and (min-width: 768px) {
+  .mode-sm { display: none; }
+  .mode-md { display: inline-flex; }
+
+  /* nav appears, menu button disappears (classic responsive header) */
+  .menu-btn { display: none; }
+  .nav { display: flex; gap: 8px; }
+
+  /* roster becomes 3 columns */
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* split becomes 2 columns */
+  .split {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ========== LG breakpoint (≥1024px) ========== */
+@media screen and (min-width: 1024px) {
+  .mode-md { display: none; }
+  .mode-lg { display: inline-flex; }
+
+  /* more breathing room */
+  .hero, .panel { padding: 20px; }
+
+  /* roster becomes 4 columns */
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ========== XL breakpoint (≥1280px) ========== */
+@media screen and (min-width: 1280px) {
+  .mode-lg { display: none; }
+  .mode-xl { display: inline-flex; }
+
+  /* slightly larger max width feel via typography changes (still same container) */
+  body { font-size: 17px; }
+}

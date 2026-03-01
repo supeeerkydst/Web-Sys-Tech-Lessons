@@ -1,0 +1,945 @@
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Bootstrap Complete Viewer</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+          <div class="container-fluid px-3">
+              <a class="navbar-brand" href="#">Bootstrap Complete Viewer</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="nav" class="collapse navbar-collapse">
+                  <ul class="navbar-nav ms-auto flex-wrap">
+                      <li class="nav-item"><a class="nav-link" href="#typography">Typography</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#tables">Tables</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#images">Images</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#components">Components</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#utilities">Utilities</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <header class="bg-white border-bottom py-4">
+          <div class="container">
+              <h1 class="display-6 mb-1">Bootstrap Complete Viewer</h1>
+              <p class="text-secondary mb-0">A categorized “showcase” page for core elements and Bootstrap styles (Beginner → Intermediate).</p>
+          </div>
+      </header>
+
+      <main class="container my-4">
+
+          <!-- ================= Typography ================= -->
+          <section id="typography" class="mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                      <h2 class="h4 mb-3">Typography</h2>
+
+                      <div class="row g-4">
+                          <div class="col-lg-6">
+                              <h1 class="h1">Heading 1</h1>
+                              <h2 class="h2">Heading 2</h2>
+                              <h3 class="h3">Heading 3</h3>
+                              <h4 class="h4">Heading 4</h4>
+                              <h5 class="h5">Heading 5</h5>
+                              <h6 class="h6">Heading 6</h6>
+
+                              <p class="lead mt-3">Lead paragraph (lead)</p>
+                              <p>Paragraph with <strong>strong</strong>, <em>em</em>, <u>underline</u>, <mark>mark</mark>, <code>inline code</code>, and a <a href="#" class="link-primary">link</a>.</p>
+
+                              <p class="text-muted mb-1">text-muted</p>
+                              <p class="text-primary mb-1">text-primary</p>
+                              <p class="text-success mb-1">text-success</p>
+                              <p class="text-danger mb-1">text-danger</p>
+                              <p class="text-warning mb-1">text-warning</p>
+                              <p class="text-info mb-1">text-info</p>
+                          </div>
+
+                          <div class="col-lg-6">
+                              <blockquote class="blockquote mb-1">
+                                  <p class="mb-0">“Blockquote sample text.”</p>
+                              </blockquote>
+                              <figcaption class="blockquote-footer mb-3">Someone famous</figcaption>
+
+                              <pre class="bg-dark text-white p-3 rounded"><code>pre > code block example
+  const x = 1;
+  console.log(x);</code></pre>
+
+                              <div class="mb-2">Badges</div>
+                              <div class="d-flex flex-wrap gap-2">
+                                  <span class="badge text-bg-primary">primary</span>
+                                  <span class="badge text-bg-secondary">secondary</span>
+                                  <span class="badge text-bg-success">success</span>
+                                  <span class="badge text-bg-danger">danger</span>
+                                  <span class="badge text-bg-warning">warning</span>
+                                  <span class="badge text-bg-info">info</span>
+                                  <span class="badge text-bg-light">light</span>
+                                  <span class="badge text-bg-dark">dark</span>
+                                  <span class="badge rounded-pill text-bg-primary">pill</span>
+                              </div>
+
+                              <hr class="my-4" />
+
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <h3 class="h6">Lists</h3>
+                                      <ul>
+                                          <li>Unordered list</li>
+                                          <li>Another item</li>
+                                      </ul>
+                                      <ol>
+                                          <li>Ordered list</li>
+                                          <li>Another item</li>
+                                      </ol>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <h3 class="h6">Description list</h3>
+                                      <dl>
+                                          <dt>Term</dt>
+                                          <dd>Description</dd>
+                                          <dt>Another term</dt>
+                                          <dd>Another description</dd>
+                                      </dl>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </section>
+
+          <!-- ================= Buttons ================= -->
+          <section id="buttons" class="mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                      <h2 class="h4 mb-3">Buttons</h2>
+
+                      <div class="mb-3 d-flex flex-wrap gap-2">
+                          <button class="btn btn-primary">Primary</button>
+                          <button class="btn btn-secondary">Secondary</button>
+                          <button class="btn btn-success">Success</button>
+                          <button class="btn btn-danger">Danger</button>
+                          <button class="btn btn-warning">Warning</button>
+                          <button class="btn btn-info">Info</button>
+                          <button class="btn btn-light">Light</button>
+                          <button class="btn btn-dark">Dark</button>
+                          <button class="btn btn-link">Link</button>
+                      </div>
+
+                      <div class="mb-3 d-flex flex-wrap gap-2">
+                          <button class="btn btn-outline-primary">Outline Primary</button>
+                          <button class="btn btn-outline-secondary">Outline Secondary</button>
+                          <button class="btn btn-outline-success">Outline Success</button>
+                          <button class="btn btn-outline-danger">Outline Danger</button>
+                          <button class="btn btn-outline-warning">Outline Warning</button>
+                          <button class="btn btn-outline-info">Outline Info</button>
+                          <button class="btn btn-outline-dark">Outline Dark</button>
+                      </div>
+
+                      <div class="mb-3 d-flex flex-wrap align-items-center gap-2">
+                          <button class="btn btn-primary btn-sm">Small</button>
+                          <button class="btn btn-primary">Default</button>
+                          <button class="btn btn-primary btn-lg">Large</button>
+                          <button class="btn btn-primary" disabled>Disabled</button>
+                      </div>
+
+                      <div class="row g-4">
+                          <div class="col-lg-6">
+                              <div class="mb-2">Button group</div>
+                              <div class="btn-group" role="group">
+                                  <button class="btn btn-outline-primary">Left</button>
+                                  <button class="btn btn-outline-primary">Middle</button>
+                                  <button class="btn btn-outline-primary">Right</button>
+                              </div>
+
+                              <div class="mt-3 mb-2">Vertical group</div>
+                              <div class="btn-group-vertical" role="group">
+                                  <button class="btn btn-outline-secondary">One</button>
+                                  <button class="btn btn-outline-secondary">Two</button>
+                                  <button class="btn btn-outline-secondary">Three</button>
+                              </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                              <div class="mb-2">Dropdown</div>
+                              <div class="dropdown">
+                                  <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li>
+                                          <hr class="dropdown-divider" />
+                                      </li>
+                                      <li><a class="dropdown-item" href="#">Something else</a></li>
+                                  </ul>
+                              </div>
+
+                              <div class="mt-3 mb-2">Block button</div>
+                              <div class="d-grid gap-2">
+                                  <button class="btn btn-success">d-grid button</button>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </section>
+
+          <!-- ================= Tables ================= -->
+          <section id="tables" class="mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                      <h2 class="h4 mb-3">Tables</h2>
+
+                      <div class="row g-4">
+                          <div class="col-lg-6">
+                              <h3 class="h6">Basic</h3>
+                              <div class="table-responsive">
+                                  <table class="table">
+                                      <thead>
+                                          <tr>
+                                              <th>#</th>
+                                              <th>Name</th>
+                                              <th>Status</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>1</td>
+                                              <td>John</td>
+                                              <td>Active</td>
+                                          </tr>
+                                          <tr>
+                                              <td>2</td>
+                                              <td>Jane</td>
+                                              <td>Inactive</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                              <h3 class="h6 mt-4">Striped / Hover</h3>
+                              <div class="table-responsive">
+                                  <table class="table table-striped table-hover">
+                                      <thead>
+                                          <tr>
+                                              <th>#</th>
+                                              <th>Name</th>
+                                              <th>Status</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>1</td>
+                                              <td>John</td>
+                                              <td>Active</td>
+                                          </tr>
+                                          <tr>
+                                              <td>2</td>
+                                              <td>Jane</td>
+                                              <td>Inactive</td>
+                                          </tr>
+                                          <tr>
+                                              <td>3</td>
+                                              <td>Kim</td>
+                                              <td>Pending</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                              <h3 class="h6 mt-4">Bordered / Borderless</h3>
+                              <div class="table-responsive">
+                                  <table class="table table-bordered">
+                                      <tbody>
+                                          <tr>
+                                              <td>table-bordered</td>
+                                              <td>Cell</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Cell</td>
+                                              <td>Cell</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+
+                                  <table class="table table-borderless">
+                                      <tbody>
+                                          <tr>
+                                              <td>table-borderless</td>
+                                              <td>Cell</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Cell</td>
+                                              <td>Cell</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                              <h3 class="h6">Small / Dark</h3>
+                              <div class="table-responsive">
+                                  <table class="table table-sm">
+                                      <thead>
+                                          <tr>
+                                              <th>table-sm</th>
+                                              <th>Cell</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>Small</td>
+                                              <td>Small</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+
+                                  <table class="table table-dark">
+                                      <thead>
+                                          <tr>
+                                              <th>table-dark</th>
+                                              <th>Cell</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>Dark</td>
+                                              <td>Dark</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                              <h3 class="h6 mt-4">Striped columns</h3>
+                              <div class="table-responsive">
+                                  <table class="table table-striped-columns">
+                                      <thead>
+                                          <tr>
+                                              <th>A</th>
+                                              <th>B</th>
+                                              <th>C</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>1</td>
+                                              <td>2</td>
+                                              <td>3</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                              <h3 class="h6 mt-4">Contextual (rows + table)</h3>
+                              <div class="table-responsive">
+                                  <table class="table table-primary">
+                                      <tbody>
+                                          <tr>
+                                              <td>table-primary</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                  <table class="table">
+                                      <tbody>
+                                          <tr class="table-primary">
+                                              <td>table-primary</td>
+                                          </tr>
+                                          <tr class="table-secondary">
+                                              <td>table-secondary</td>
+                                          </tr>
+                                          <tr class="table-success">
+                                              <td>table-success</td>
+                                          </tr>
+                                          <tr class="table-danger">
+                                              <td>table-danger</td>
+                                          </tr>
+                                          <tr class="table-warning">
+                                              <td>table-warning</td>
+                                          </tr>
+                                          <tr class="table-info">
+                                              <td>table-info</td>
+                                          </tr>
+                                          <tr class="table-light">
+                                              <td>table-light</td>
+                                          </tr>
+                                          <tr class="table-dark">
+                                              <td>table-dark</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                              <h3 class="h6 mt-4">Responsive wrapper</h3>
+                              <div class="table-responsive-sm">
+                                  <table class="table">
+                                      <thead>
+                                          <tr>
+                                              <th>table-responsive-sm</th>
+                                              <th>Resize window</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>Wide content</td>
+                                              <td>Scroll on small</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </section>
+
+          <!-- ================= Images ================= -->
+          <section id="images" class="mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                      <h2 class="h4 mb-3">Images & Figures</h2>
+
+                      <div class="row g-4">
+                          <div class="col-lg-6">
+                              <h3 class="h6">Responsive image</h3>
+                              <img src="https://picsum.photos/900/380" class="img-fluid rounded" alt="img-fluid">
+                          </div>
+                          <div class="col-lg-6">
+                              <h3 class="h6">Shapes</h3>
+                              <div class="d-flex flex-wrap gap-3 align-items-center">
+                                  <img src="https://picsum.photos/140" class="rounded" alt="rounded">
+                                  <img src="https://picsum.photos/140" class="rounded-circle" alt="rounded-circle">
+                                  <img src="https://picsum.photos/140" class="img-thumbnail" alt="img-thumbnail">
+                              </div>
+
+                              <h3 class="h6 mt-4">Figure</h3>
+                              <figure class="figure">
+                                  <img src="https://picsum.photos/800/250" class="figure-img img-fluid rounded" alt="figure">
+                                  <figcaption class="figure-caption">figure + figure-caption</figcaption>
+                              </figure>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </section>
+
+          <!-- ================= Forms ================= -->
+          <section id="forms" class="mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                      <h2 class="h4 mb-3">Forms (Complete Core Inputs)</h2>
+
+                      <form class="row g-3">
+                          <div class="col-md-4">
+                              <label class="form-label">Text</label>
+                              <input type="text" class="form-control" placeholder="text">
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Email</label>
+                              <input type="email" class="form-control" placeholder="name@example.com">
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Password</label>
+                              <input type="password" class="form-control" placeholder="••••••••">
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Number</label>
+                              <input type="number" class="form-control" value="10">
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Tel</label>
+                              <input type="tel" class="form-control" placeholder="+63...">
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">URL</label>
+                              <input type="url" class="form-control" placeholder="https://">
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Search</label>
+                              <input type="search" class="form-control" placeholder="search...">
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Color</label>
+                              <input type="color" class="form-control form-control-color" value="#0d6efd" title="Choose color">
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Range</label>
+                              <input type="range" class="form-range">
+                          </div>
+
+                          <div class="col-md-6">
+                              <label class="form-label">Textarea</label>
+                              <textarea class="form-control" rows="3" placeholder="textarea..."></textarea>
+                          </div>
+
+                          <div class="col-md-6">
+                              <label class="form-label">File</label>
+                              <input type="file" class="form-control">
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Select</label>
+                              <select class="form-select">
+                                  <option selected>Choose...</option>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                              </select>
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Multi Select</label>
+                              <select class="form-select" multiple>
+                                  <option>Option A</option>
+                                  <option>Option B</option>
+                                  <option>Option C</option>
+                              </select>
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Datalist</label>
+                              <input class="form-control" list="dlist" placeholder="type...">
+                              <datalist id="dlist">
+                                  <option value="Pikachu"></option>
+                                  <option value="Bulbasaur"></option>
+                                  <option value="Charmander"></option>
+                              </datalist>
+                          </div>
+
+                          <div class="col-md-3">
+                              <label class="form-label">Date</label>
+                              <input type="date" class="form-control">
+                          </div>
+
+                          <div class="col-md-3">
+                              <label class="form-label">Time</label>
+                              <input type="time" class="form-control">
+                          </div>
+
+                          <div class="col-md-3">
+                              <label class="form-label">Month</label>
+                              <input type="month" class="form-control">
+                          </div>
+
+                          <div class="col-md-3">
+                              <label class="form-label">Week</label>
+                              <input type="week" class="form-control">
+                          </div>
+
+                          <div class="col-md-6">
+                              <label class="form-label">Input group</label>
+                              <div class="input-group">
+                                  <span class="input-group-text">@</span>
+                                  <input type="text" class="form-control" placeholder="username">
+                                  <span class="input-group-text">.com</span>
+                              </div>
+                          </div>
+
+                          <div class="col-md-6">
+                              <label class="form-label">Floating label</label>
+                              <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Name">
+                                  <label for="float1">Name</label>
+                              </div>
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Readonly</label>
+                              <input type="text" class="form-control" value="Readonly value" readonly>
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Disabled</label>
+                              <input type="text" class="form-control" value="Disabled value" disabled>
+                          </div>
+
+                          <div class="col-md-4">
+                              <label class="form-label">Sizing</label>
+                              <div class="d-flex flex-column gap-2">
+                                  <input type="text" class="form-control form-control-sm" placeholder="form-control-sm">
+                                  <input type="text" class="form-control" placeholder="default">
+                                  <input type="text" class="form-control form-control-lg" placeholder="form-control-lg">
+                              </div>
+                          </div>
+
+                          <div class="col-md-4">
+                              <div class="mb-1">Checkbox</div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="c1">
+                                  <label class="form-check-label" for="c1">Option 1</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="c2" checked>
+                                  <label class="form-check-label" for="c2">Checked</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="c3" disabled>
+                                  <label class="form-check-label" for="c3">Disabled</label>
+                              </div>
+                          </div>
+
+                          <div class="col-md-4">
+                              <div class="mb-1">Radio</div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="r" id="r1" checked>
+                                  <label class="form-check-label" for="r1">Option A</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="r" id="r2">
+                                  <label class="form-check-label" for="r2">Option B</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="r" id="r3" disabled>
+                                  <label class="form-check-label" for="r3">Disabled</label>
+                              </div>
+                          </div>
+
+                          <div class="col-md-4">
+                              <div class="mb-1">Switch</div>
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="s1" checked>
+                                  <label class="form-check-label" for="s1">Enabled</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="s2">
+                                  <label class="form-check-label" for="s2">Off</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="s3" disabled>
+                                  <label class="form-check-label" for="s3">Disabled</label>
+                              </div>
+                          </div>
+
+                          <div class="col-12">
+                              <h3 class="h6 mt-3">Validation states</h3>
+                              <div class="row g-3">
+                                  <div class="col-md-6">
+                                      <input class="form-control is-valid" value="is-valid">
+                                      <div class="valid-feedback">Looks good!</div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <input class="form-control is-invalid" value="is-invalid">
+                                      <div class="invalid-feedback">Please provide a valid value.</div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="col-12 d-flex flex-wrap gap-2 mt-2">
+                              <button type="button" class="btn btn-primary">Submit</button>
+                              <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                          </div>
+                      </form>
+
+                  </div>
+              </div>
+          </section>
+
+          <!-- ================= Components ================= -->
+          <section id="components" class="mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                      <h2 class="h4 mb-3">Components</h2>
+
+                      <div class="row g-4">
+                          <div class="col-lg-6">
+                              <h3 class="h6">Alerts (all)</h3>
+                              <div class="alert alert-primary">alert-primary</div>
+                              <div class="alert alert-secondary">alert-secondary</div>
+                              <div class="alert alert-success">alert-success</div>
+                              <div class="alert alert-danger">alert-danger</div>
+                              <div class="alert alert-warning">alert-warning</div>
+                              <div class="alert alert-info">alert-info</div>
+                              <div class="alert alert-light">alert-light</div>
+                              <div class="alert alert-dark">alert-dark</div>
+
+                              <h3 class="h6 mt-4">Breadcrumb</h3>
+                              <nav aria-label="breadcrumb">
+                                  <ol class="breadcrumb">
+                                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                  </ol>
+                              </nav>
+
+                              <h3 class="h6 mt-4">Progress</h3>
+                              <div class="progress mb-2">
+                                  <div class="progress-bar" style="width: 25%">25%</div>
+                              </div>
+                              <div class="progress mb-2">
+                                  <div class="progress-bar bg-success" style="width: 50%">50%</div>
+                              </div>
+                              <div class="progress mb-2">
+                                  <div class="progress-bar bg-danger progress-bar-striped" style="width: 75%">75%</div>
+                              </div>
+                              <div class="progress">
+                                  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                              </div>
+
+                              <h3 class="h6 mt-4">Spinners</h3>
+                              <div class="d-flex gap-3 align-items-center">
+                                  <div class="spinner-border" role="status"></div>
+                                  <div class="spinner-border text-primary" role="status"></div>
+                                  <div class="spinner-grow" role="status"></div>
+                                  <div class="spinner-grow text-success" role="status"></div>
+                              </div>
+
+                              <h3 class="h6 mt-4">Pagination</h3>
+                              <nav>
+                                  <ul class="pagination">
+                                      <li class="page-item disabled"><a class="page-link" href="#">Prev</a></li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                  </ul>
+                              </nav>
+                          </div>
+
+                          <div class="col-lg-6">
+                              <h3 class="h6">Accordion</h3>
+                              <div class="accordion" id="acc">
+                                  <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc1">
+                                              Accordion Item #1
+                                          </button>
+                                      </h2>
+                                      <div id="acc1" class="accordion-collapse collapse show" data-bs-parent="#acc">
+                                          <div class="accordion-body">Accordion content #1</div>
+                                      </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2">
+                                              Accordion Item #2
+                                          </button>
+                                      </h2>
+                                      <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#acc">
+                                          <div class="accordion-body">Accordion content #2</div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <h3 class="h6 mt-4">Navs / Tabs / Pills</h3>
+                              <ul class="nav nav-tabs mb-2" role="tablist">
+                                  <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#t1">Tab 1</a></li>
+                                  <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#t2">Tab 2</a></li>
+                              </ul>
+                              <div class="tab-content border rounded p-3 bg-white">
+                                  <div class="tab-pane fade show active" id="t1">Tab 1 content</div>
+                                  <div class="tab-pane fade" id="t2">Tab 2 content</div>
+                              </div>
+
+                              <ul class="nav nav-pills mt-3">
+                                  <li class="nav-item"><a class="nav-link active" href="#">Pill 1</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="#">Pill 2</a></li>
+                              </ul>
+
+                              <h3 class="h6 mt-4">List group</h3>
+                              <ul class="list-group mb-2">
+                                  <li class="list-group-item active">Active item</li>
+                                  <li class="list-group-item">Normal item</li>
+                                  <li class="list-group-item disabled">Disabled item</li>
+                              </ul>
+
+                              <ul class="list-group list-group-flush mb-2">
+                                  <li class="list-group-item">Flush item</li>
+                                  <li class="list-group-item">Flush item</li>
+                              </ul>
+
+                              <ul class="list-group list-group-numbered mb-2">
+                                  <li class="list-group-item">Numbered item</li>
+                                  <li class="list-group-item">Numbered item</li>
+                              </ul>
+
+                              <h3 class="h6 mt-4">Card</h3>
+                              <div class="card">
+                                  <img src="https://picsum.photos/900/280" class="card-img-top" alt="card">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Card text</p>
+                                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDemo">Open Modal</button>
+                                      <button class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDemo">Open Offcanvas</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <hr class="my-4">
+
+                      <div class="row g-4">
+                          <div class="col-lg-6">
+                              <h3 class="h6">Toast</h3>
+                              <button class="btn btn-outline-primary mb-2" id="showToast">Show toast</button>
+                              <div class="toast-container position-relative">
+                                  <div id="toastDemo" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                      <div class="toast-header">
+                                          <strong class="me-auto">Toast</strong>
+                                          <small>now</small>
+                                          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                                      </div>
+                                      <div class="toast-body">This is a Bootstrap toast.</div>
+                                  </div>
+                              </div>
+
+                              <h3 class="h6 mt-4">Tooltips / Popovers</h3>
+                              <div class="d-flex flex-wrap gap-2">
+                                  <button class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip text">Tooltip</button>
+                                  <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover content">Popover</button>
+                              </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                              <h3 class="h6">Carousel</h3>
+                              <div id="car" class="carousel slide" data-bs-ride="carousel">
+                                  <div class="carousel-inner rounded">
+                                      <div class="carousel-item active">
+                                          <img src="https://picsum.photos/900/280?1" class="d-block w-100" alt="slide1">
+                                      </div>
+                                      <div class="carousel-item">
+                                          <img src="https://picsum.photos/900/280?2" class="d-block w-100" alt="slide2">
+                                      </div>
+                                      <div class="carousel-item">
+                                          <img src="https://picsum.photos/900/280?3" class="d-block w-100" alt="slide3">
+                                      </div>
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon"></span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon"></span>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </section>
+
+          <!-- ================= Utilities ================= -->
+          <section id="utilities" class="mb-5">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                      <h2 class="h4 mb-3">Utilities</h2>
+
+                      <div class="row g-4">
+                          <div class="col-lg-6">
+                              <h3 class="h6">Backgrounds</h3>
+                              <div class="p-3 mb-2 bg-primary text-white rounded">bg-primary</div>
+                              <div class="p-3 mb-2 bg-secondary text-white rounded">bg-secondary</div>
+                              <div class="p-3 mb-2 bg-success text-white rounded">bg-success</div>
+                              <div class="p-3 mb-2 bg-danger text-white rounded">bg-danger</div>
+                              <div class="p-3 mb-2 bg-warning rounded">bg-warning</div>
+                              <div class="p-3 mb-2 bg-info rounded">bg-info</div>
+                              <div class="p-3 mb-2 bg-light border rounded">bg-light</div>
+                              <div class="p-3 mb-2 bg-dark text-white rounded">bg-dark</div>
+
+                              <h3 class="h6 mt-4">Borders / Shadows</h3>
+                              <div class="p-3 mb-2 border rounded">border + rounded</div>
+                              <div class="p-3 mb-2 border border-2 border-primary rounded">border-primary</div>
+                              <div class="p-3 mb-2 shadow-sm bg-white rounded">shadow-sm</div>
+                              <div class="p-3 mb-2 shadow bg-white rounded">shadow</div>
+                              <div class="p-3 mb-2 shadow-lg bg-white rounded">shadow-lg</div>
+                          </div>
+
+                          <div class="col-lg-6">
+                              <h3 class="h6">Spacing / Display / Flex</h3>
+                              <div class="p-2 mb-2 bg-white border rounded">p-2</div>
+                              <div class="p-4 mb-2 bg-white border rounded">p-4</div>
+                              <div class="mb-2 d-none d-md-block p-3 bg-warning rounded">d-none d-md-block (hidden on small)</div>
+
+                              <div class="d-flex gap-2 flex-wrap">
+                                  <div class="p-2 bg-white border rounded">d-flex</div>
+                                  <div class="p-2 bg-white border rounded">gap-2</div>
+                                  <div class="p-2 bg-white border rounded">flex-wrap</div>
+                              </div>
+
+                              <h3 class="h6 mt-4">Text alignment</h3>
+                              <div class="p-2 bg-white border rounded text-start mb-2">text-start</div>
+                              <div class="p-2 bg-white border rounded text-center mb-2">text-center</div>
+                              <div class="p-2 bg-white border rounded text-end">text-end</div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </section>
+
+      </main>
+
+      <footer class="bg-dark text-white py-4">
+          <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+              <small>Bootstrap Complete Viewer</small>
+              <small class="text-white-50">Bootstrap 5.3</small>
+          </div>
+      </footer>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modalDemo" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Modal Demo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">This is how a Bootstrap modal looks.</div>
+                  <div class="modal-footer">
+                      <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-primary" type="button">Action</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Offcanvas -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDemo">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+              This is how offcanvas looks.
+          </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+          const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+          tooltipTriggerList.map(function(el) {
+              return new bootstrap.Tooltip(el);
+          });
+
+          const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+          popoverTriggerList.map(function(el) {
+              return new bootstrap.Popover(el);
+          });
+
+          const toastEl = document.getElementById('toastDemo');
+          const toast = new bootstrap.Toast(toastEl);
+          document.getElementById('showToast').addEventListener('click', () => toast.show());
+      </script>
+  </body>
+
+</html>
