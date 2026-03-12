@@ -1,0 +1,25 @@
+/* external css */
+main {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+/*
+ min = greater than or equal to
+ max = less than or equal to
+*/
+@media (min-width: 768px) { /* >= 768 && <= 991px*/
+    body {
+        background-color: green;
+        color: white;
+        display: float;
+    }
+}
+
+@media (min-width: 992px) { 
+    body {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: pink;
+        font-size: 80px;
+    }
+}
