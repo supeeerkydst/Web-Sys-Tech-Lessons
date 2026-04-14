@@ -1,0 +1,71 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        Name:
+        <input type="text" id = "name"/> <br>
+        Math:
+        <input type="text" id = "math" /> <br>
+        Science:
+        <input type="text" id = "science" /> <br>
+        Final Grade:
+        <input type="text" id = "grade" /> <br>
+        Remarks:
+        <input type="text" id = "remark" /> <br>
+        <button onclick="displayGrade()">Calculate Grade</button>
+    </body>
+</html>
+
+<script>
+
+    let __name;
+    let __result;
+    let __math, __science;
+
+    let values = [1, 23, 24, 41, 22];
+
+    let __sum = 0;
+    for (let i = 0; i < values.length; i++) {
+        __sum += values[i];
+    }
+
+    console.log(`The sum of the elements is ${__sum}`);
+
+    let names = ["Uriel", "Andrea", "Jomarie", "Miguel Lorenzo", "Yap", "Shiela"];
+
+    let h = 1;
+    for (let i = 0; i < names.length; i++) {
+        document.write(`<h${h}> ${names[i]} </h${h}>`);
+        h++; // counter for header tag
+    }
+
+
+    let number = [68,67,4,5,6,8,12,14,17,20];
+
+    for (let i = 0; i < number.length; i++) {
+        let color = "blue;"
+        if ((number[i] % 2) != 0) {
+            color = "red";
+        }
+        document.write(`<span style='color:${color}'>${number[i]}</span><br>`);
+    }
+
+    function displayGrade() {
+        __name = document.getElementById("name").value;
+        __math = parseFloat(document.getElementById("math").value);
+        __science = parseFloat(document.getElementById("science").value);
+
+        let result = computeGrade(__math, __science);
+        document.getElementById("grade").value = result;
+        document.getElementById("remark").value = getRemark(result);
+    }
+
+    function computeGrade(math, science) {
+        return (math+science) / 2;
+    }
+
+    function getRemark(result) {
+        return result >= 74.5 ? "Passed" : "Failed";
+    }
+</script>
