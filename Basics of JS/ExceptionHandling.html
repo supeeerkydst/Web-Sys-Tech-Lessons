@@ -1,0 +1,70 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exception Handling</title>
+
+        <!-- 
+            jquery is a javascript library
+        -->
+        
+        <!-- bootstrap -->
+        <script src="jquery-4.0.0.min.js"></script>
+        <link rel="stylesheet" href="jquery.sweet-modal.min.css" />
+        <script src="jquery.sweet-modal.min.js"></script>
+    </head>
+    <body>
+        <input type="text" id="num1"/><br>
+        <input type="text" id="num2"/><br>
+        <button onclick="addNumbers()">COMPUTE</button>
+
+        <p class="content"></p>
+    </body>
+</html>
+
+<script>
+    function addNumbers() {
+        try {
+            let num1 = $("#num1").val();
+            let num2 = $("#num2").val();
+
+            $(".content").html("This is from jquery method");
+
+            let summ = parseInt(num1) / num2;
+
+            let table = "<br><br><table border=1 style='border-collapse:collapse;width:100%'>" +
+                "<thead> <th>No</th><th>Name</th> </thead>" +
+                "<tbody>" +
+                    "<tr><td>1</td><td>Kim</td></tr>"
+                "</tbody></table>";
+            $.sweetModal({
+                content: table,
+                icon: $.sweetModal.ICON_SUCCESS,
+                title: 'Result',
+                buttons: [
+                    {
+                        label: 'Continue',
+                        classes: 'blueB'
+                    },
+                    {
+                        label: 'Cancel',
+                        classes: 'redB'
+                    }
+                ]
+            });
+
+        } catch (error) {
+            if ((error+"").includes("ReferenceError")) {
+                $.sweetModal({
+                    content: error+"",
+                    icon: $.sweetModal.ICON_ERROR,
+                    title: 'An error occured'
+                })
+            }
+
+            if ((error+"").includes("RangeError")) {
+                alert ("Sobra ka na ng index.");
+            }
+        }
+    }
+</script>

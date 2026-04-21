@@ -44,10 +44,7 @@
     let number = [68,67,4,5,6,8,12,14,17,20];
 
     for (let i = 0; i < number.length; i++) {
-        let color = "blue;"
-        if ((number[i] % 2) != 0) {
-            color = "red";
-        }
+        let color = (number[i] % 2) == 0 ? "blue" : "red";
         document.write(`<span style='color:${color}'>${number[i]}</span><br>`);
     }
 
